@@ -14,7 +14,7 @@ def predict_ml_ppa(features):
     project_root = Path(__file__).resolve().parent.parent
 
     # Load dataset
-    dataset_path = project_root / "data" / "ppa_dataset.csv"
+    dataset_path = Path(__file__).parent / "ppa_dataset.csv"
 
     df = pd.read_csv(dataset_path)
 
