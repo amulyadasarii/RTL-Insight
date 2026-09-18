@@ -41,8 +41,7 @@ if uploaded_file is not None:
     # Save uploaded file
     rtl_file = (
         Path(__file__).parent
-        / "rtl"
-        / uploaded_file.name
+        / "sample_alu.v"
     )
 
     rtl_file.write_bytes(
